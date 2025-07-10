@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h2 class="dashboard-head">All Notes</h2>
+<a href="{{ url_for('add_note') }}">+ Add New Note</a>
+<hr>
+
+<form method="GET" action="{{ url_for('search_notes') }}" class="dashboard-form">
+    <input type="text" name="query" placeholder="Search Notes..." required class="dashboard-input"/>
+    <button type="submit" class="dashboard-search">Search</button>
+</form>
+
+<div class="note-container">
+{% for note in notes %}
+
+<div class="note" style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+    <h3>{{ note.title }}</h3>
+    <small>{{ note.created_at.strftime('%Y-%m-%d %H:%M') }}</small>
+    <p>{{ note.content[:100] }}{% if note.content|length > 100 %}...{% endif %}</p>
+    <a href="{{ url_for('edit_note',note_id=note.id) }}"><button class="edit-btn" type="submit">Edit</button></a>
+    <form action="{{ url_for('delete_note',note_id=note.id) }}" method="POST">
+        <button type="submit" class="delete-btn">Delete</button>
+    </form>
+</div>
+{% else %}
+<p>No Notes Yet...</p>
+{% endfor %}
+</div>
+{% endblock %}

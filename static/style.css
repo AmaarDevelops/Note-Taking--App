@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f6f6f6;
+    padding: 20px;
+}
+.navbar{
+    margin-bottom: 20px;
+}
+.navbar a{
+    margin-right: 15px;
+    text-decoration: None;
+    color: #007bFF;
+}
+.container{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+.flash.success{
+    color: green;
+}
+.flash.danger{
+    color: red;
+}
+.Add-head{
+    margin-left: 40vw;
+    position: relative;
+    bottom: 18px;
+}
+.add-form{
+    display: flex;
+    justify-content: center;
+}
+.add-title{
+    height: 25px;
+    position: relative;
+    left: 20vw;
+    bottom: 5vh;
+    width: 20vw;
+    text-align: center;
+}
+.add-content{
+    position: relative;
+    top: 10px;
+    right: 0.7vw;
+    width: 20.4vw;
+    height: 30vh;
+}
+.add-btn{
+    height: 7vh;
+    position: relative;
+    top: 35vh;
+    right: 23%;
+    width: 20vw;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: large;
+    border: None;
+    outline: None;
+    border-radius: 4px;
+}
+.dashboard-head{
+    margin-left: 40vw;
+}
+.dashboard-form{
+    margin-left: 32vw;
+    height: 15vh;
+}
+.dashboard-input{
+    height: 30px;
+    width: 20vw;
+}
+.dashboard-search{
+    height: 35px;
+    width: 7vw;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: None;
+    border-radius: 4px;
+}
+.note-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px 0px;
+    margin-right: 10vw;
+}
+.note{
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    min-height: 150px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.note:hover {
+    transform: scale(1.02);
+}
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background-color: #e60000;
+}
+.edit-btn{
+    background-color: blue;
+    color: white;
+    border: None;
+     padding: 6px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.edit-txt{
+    height: 20vh;
+}
+.edit-button{
+     background-color: blue;
+    color: white;
+    border: None;
+     padding: 6px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 13vw;
+}
